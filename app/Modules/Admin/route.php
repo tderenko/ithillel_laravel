@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+Auth::routes();
+
 Route::get('/', [\App\Modules\Admin\Controllers\AdminController::class, 'index'])->name('admin-home');
 
 Route::resources([
