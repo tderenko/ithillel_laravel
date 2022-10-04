@@ -63,7 +63,7 @@ class UserFactory extends Factory
     public function withName($name)
     {
         return $this->state(fn (array $attr) => [
-                'name' => Hash::make($name)
+                'name' => $name
         ]);
     }
 }
